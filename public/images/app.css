@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.welcome-content{
+    background: url(/public/images/ROSEco.ffee-in-Marrickville-18-1024x681.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.dashboard-bg{
+    background: url(/public/images/ROSEco.ffee-in-Marrickville-18-1024x681.png);
+    background-size: cover;
+    height: 50rem;
+    background-repeat: no-repeat;
+}
+.dark-bg{
+    background-color: #000;
+}
+.login-bg{
+    background: rgba(0,0,0,0.5),;
+}
+section {
+    font-family: "Poppins", sans-serif;
+}
+.bg{
+    background: url(/public/images/bgblack.png);
+    background-size: contain;
+    height: 95vh;
+    background-repeat: no-repeat;
+}
