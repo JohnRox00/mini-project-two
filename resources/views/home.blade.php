@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="bg-black/80 py-5">
+    <div class="bg-black/25 py-5">
         <section class="overflow-hidden header-bg py-52">
             <div class="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">
                 <div role="main" class="flex flex-col items-center justify-center">
@@ -15,7 +15,7 @@
                 </div>
             </div>
         </section>
-        <div class=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 mb-12 mt-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 mb-12 mt-6">
             <div role="main" class="flex flex-col items-center justify-center">
                 <img class="object-contain h-64" src="{{ asset('images/Our Products.png') }}" alt="">
             </div>
@@ -69,7 +69,7 @@
                 </div>
             </article>
         </div>
-        <div>
+        <div class="bg-black/75 backdrop-blur-md bg-gradient-to-r from-transparent via-gray-800 to-transparent opacity-80">
             <div class='flex flex-col items-center justify-center min-h-screen px-2 mx-auto'>
                 <div role="main" class="flex flex-col items-center justify-center">
                     <img class="object-contain h-64" src="{{ asset('images/Our Services.png') }}" alt="">
@@ -226,7 +226,7 @@
             </div>
             </section>
         
-            <section class="min-h-screen bg-gradient-to-r from-blue-600 via-blue-800 to-blue-900 opacity-80 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900">
+            <section class="min-h-screen bg-gradient-to-r from-transparent via-gray-800 to-gray-900 opacity-80 ">
             <div class="container mx-auto flex min-h-screen flex-col px-6 py-12">
                 <div class="flex-1 lg:-mx-6 lg:flex lg:items-center">
                 <div class="text-white lg:mx-6 lg:w-1/2">

@@ -113,8 +113,8 @@
                     @csrf
                     <div class="mb-4 text-lg">
                         <input
-                            class=" rounded-3xl border-none bg-yellow-400 bg-opacity-50 px-6 py-2 text-center text-inherit placeholder-slate-200 shadow-lg outline-none backdrop-blur-md form-control @error('email') is-invalid @enderror" name="email"
-                                        value="{{ old('email') }}" required autocomplete="email" autofocus" type="text" name="name"
+                            class=" rounded-3xl border-none bg-gray-400 bg-opacity-50 px-6 py-2 text-center text-inherit placeholder-slate-200 shadow-lg outline-none backdrop-blur-md form-control @error('email') is-invalid @enderror" name="email"
+                                        value="{{ old('email') }}" required autocomplete="email" autofocus type="text" name="name"
                             placeholder="id@email.com" />
                             @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -125,7 +125,7 @@
 
                     <div class="mb-4 text-lg">
                         <input
-                            class="rounded-3xl border-none bg-yellow-400 bg-opacity-50 px-6 py-2 text-center text-inherit placeholder-slate-200 shadow-lg outline-none backdrop-blur-md form-control @error('password') is-invalid @enderror" name="password"
+                            class="rounded-3xl border-none bg-gray-400 bg-opacity-50 px-6 py-2 text-center text-inherit placeholder-slate-200 shadow-lg outline-none backdrop-blur-md form-control @error('password') is-invalid @enderror" name="password"
                                         required autocomplete="current-password"
                             type="password" name="name" id="password" placeholder="*********" />
                         @error('password')
@@ -157,4 +157,5 @@
         </div>
     </div>
 </body>
+</html>
 
