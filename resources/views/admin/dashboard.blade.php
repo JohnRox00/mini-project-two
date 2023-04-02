@@ -10,6 +10,9 @@
         <p class="mb-4">Dashboard</p>
         <div class="row">
         </div>
+        {{-- <div class="main-logo justify-center">
+                <img class="object-contain h-screen w-screen" src="{{asset('images/Logo1.png')}}" alt="">
+            </div> --}}
    </div>
 
 @endsection
