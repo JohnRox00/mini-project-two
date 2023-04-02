@@ -13,6 +13,8 @@ module.exports = {
       'mono': ['ui-monospace', 'SFMono-Regular','Lobster'],
       'display': ['Oswald'],
       'body': ['"Open Sans"','Lobster'],
+      'yellow': ['Yellow Ginger','Lobster'],
+
     }
   },
   plugins: [],

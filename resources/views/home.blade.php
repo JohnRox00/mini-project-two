@@ -47,7 +47,7 @@
                         
                             <p
                         class="text-base text-lg stroke-2 leading-normal text-center text-gray-600 dark:text-white mt-4 lg:w-1/2 md:w-10/12 w-11/12">
-                        If you're looking for the finest of Coffee's, that is able to lull your heart into the sweetest
+                        If you're looking for the finest of Coffee, that is able to lull your heart into the sweetest
                         intoxication, what are you waiting for? come and let us serve you our TeamBangan's Finest Coffee.
                     </p>
                 </div>
@@ -214,7 +214,7 @@
                 </div>
         
                 <div class="rounded-lg border-2 border-gray-100 dark:border-gray-700">
-                    <button class="flex w-full items-center justify-between p-8">
+                    <button class="icon flex w-full items-center justify-between p-8">
                     <h1 class="font-semibold text-gray-700 dark:text-white">Are you open for franchising?</h1>
         
                     <span class="rounded-full bg-blue-500 text-white">
@@ -223,11 +223,14 @@
                         </svg>
                     </span>
                     </button>
+                    <hr class="border-gray-200 dark:border-gray-700" />
+        
+                    <p class="dropdown p-8 text-sm text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas eaque nobis, fugit odit omnis fugiat deleniti animi ab maxime cum laboriosam recusandae facere dolorum veniam quia pariatur obcaecati illo ducimus?</p>
                 </div>
         
                 <div class="rounded-lg border-2 border-gray-100 dark:border-gray-700">
-                    <button class="flex w-full items-center justify-between p-8">
-                    <h1 class="font-semibold text-gray-700 dark:text-white">Do you have discounts?</h1>
+                    <button class="icon1 flex w-full items-center justify-between p-8">
+                    <h1 class="font-semibold text-gray-700 dark:text-white">Do you give discounts?</h1>
         
                     <span class="rounded-full bg-blue-500 text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -235,11 +238,14 @@
                         </svg>
                     </span>
                     </button>
+                    <hr class="border-gray-200 dark:border-gray-700" />
+        
+                    <p class="dropdown1 p-8 text-sm text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas eaque nobis, fugit odit omnis fugiat deleniti animi ab maxime cum laboriosam recusandae facere dolorum veniam quia pariatur obcaecati illo ducimus?</p>
                 </div>
         
                 <div class="rounded-lg border-2 border-gray-100 dark:border-gray-700">
-                    <button class="flex w-full items-center justify-between p-8">
-                    <h1 class="font-semibold text-gray-700 dark:text-white">Do you deliver nationwide?</h1>
+                    <button class="icon2 flex w-full items-center justify-between p-8">
+                    <h1 class="font-semibold text-gray-700 dark:text-white">Can you deliver even if we are living abroad?</h1>
         
                     <span class="rounded-full bg-blue-500 text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -247,10 +253,13 @@
                         </svg>
                     </span>
                     </button>
+                    <hr class="border-gray-200 dark:border-gray-700" />
+        
+                    <p class="dropdown2 p-8 text-sm text-gray-500 dark:text-gray-300">Absolutely Yes!!! Order now and you will get it in just a second.</p>
                 </div>
         
                 <div class="rounded-lg border-2 border-gray-100 dark:border-gray-700">
-                    <button class="flex w-full items-center justify-between p-8">
+                    <button class="icon3 flex w-full items-center justify-between p-8">
                     <h1 class="font-semibold text-gray-700 dark:text-white">Can you still deliver even if i'm up in the mountain?</h1>
         
                     <span class="rounded-full bg-blue-500 text-white">
@@ -259,6 +268,9 @@
                         </svg>
                     </span>
                     </button>
+                    <hr class="border-gray-200 dark:border-gray-700" />
+        
+                    <p class="dropdown3 p-8 text-sm text-gray-500 dark:text-gray-300"> Absolutely Yes!!! Order now and you will get it in just a second.</p>
                 </div>
                 </div>
             </div>
@@ -388,7 +400,7 @@
                     <div class="mt-5 flex flex-col items-start space-y-2">
                     <a href="#" class="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">Retail & E-Commerce</a>
                     <a href="#" class="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">Information Technology</a>
-                    <a href="#" class="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">Finance & Insurance</a>
+                    <a href="#" class="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">Franchising</a>
                     </div>
                 </div>
         
@@ -396,9 +408,9 @@
                     <p class="font-semibold text-gray-800 dark:text-white">Services</p>
         
                     <div class="mt-5 flex flex-col items-start space-y-2">
-                    <a href="#" class="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">Translation</a>
-                    <a href="#" class="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">Proofreading & Editing</a>
-                    <a href="#" class="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">Content Creation</a>
+                    <a href="#" class="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">lorem</a>
+                    <a href="#" class="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">lorem</a>
+                    <a href="#" class="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">Coffee Creation</a>
                     </div>
                 </div>
         
@@ -407,7 +419,7 @@
         
                     <div class="mt-5 flex flex-col items-start space-y-2">
                     <a href="#" class="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">+880 768 473 4978</a>
-                    <a href="#" class="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">info@merakiui.com</a>
+                    <a href="#" class="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">email@example.com</a>
                     </div>
                 </div>
                 </div>
@@ -415,7 +427,7 @@
                 <hr class="my-6 border-gray-200 dark:border-gray-700 md:my-10" />
         
                 <div class="flex flex-col items-center justify-between sm:flex-row">
-                <a href="#" class="text-2xl font-bold text-gray-800 transition-colors duration-300 hover:text-gray-700 dark:text-white dark:hover:text-gray-300">Brand</a>
+                <a href="#" class="text-2xl font-bold text-gray-800 transition-colors duration-300 hover:text-gray-700 dark:text-white dark:hover:text-gray-300"><img class="object-contain h-24 center"  src="{{asset('images/LogoWhite.png')}}" alt=""></a>
         
                 <p class="mt-4 text-sm text-gray-500 dark:text-gray-300 sm:mt-0">© Copyright 2021. All Rights Reserved.</p>
                 </div>
