@@ -52,7 +52,7 @@
                                                             </thead>
                                                             <tbody>
                                                                 @forelse ($products as $product)
-                                                                @if ($product->category && $product->category->name == 'Whole beans')
+                                                                {{-- @if ($product->category && $product->category->name == 'Whole beans') --}}
                                                                     <tr>
                                                                         <td>{{ $product->id }}</td>
                                                                         <td>{{$product->name}}</td>
@@ -83,7 +83,7 @@
                                                                             </form>
                                                                         </td>
                                                                     </tr>
-                                                                    @endif
+                                                                    {{-- @endif --}}
                                                                 @empty
                                                                     <td colspan="6">No Products Available</td>
                                                                 @endforelse

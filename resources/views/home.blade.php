@@ -7,7 +7,21 @@
                 <div role="main" class="flex flex-col items-center justify-center">
                     <h1 class="text-4xl font-semibold leading-9 text-center text-white dark:text-white"> <img
                             class="object-contain h-24 center" src="{{ asset('images/LogoWhite.png') }}" alt=""> </h1>
-                    <p
+                            {{-- <h1>{{ $product->name }}</h1>
+
+<p>{{ $product->description }}</p>
+
+<p>Price: {{ $product->price }}</p>
+
+@if ($product->image)
+    <img src="{{ asset($product->image) }}" alt="{{ $product->name }}">
+@else
+    No image available
+@endif --}}
+
+
+                    
+                            <p
                         class="text-base text-lg stroke-2 leading-normal text-center text-gray-600 dark:text-white mt-4 lg:w-1/2 md:w-10/12 w-11/12">
                         If you're looking for the finest of Coffee's, that is able to lull your heart into the sweetest
                         intoxication, what are you waiting for? come and let us serve you our TeamBangan's Finest Coffee.

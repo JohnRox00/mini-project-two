@@ -128,4 +128,13 @@ class ProductController extends Controller
             $product->delete();
             return redirect()->back()->with('message', 'Category deleted Successfully');
         }
+
+//         public function show($id)
+// {
+//     $product = Product::findOrFail($product_id);
+//     return view('product.show', compact('product'));
+// }
+
+        
+
 }
