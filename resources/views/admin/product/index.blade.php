@@ -52,7 +52,7 @@
                                                             </thead>
                                                             <tbody>
                                                                 @forelse ($products as $product)
-                                                                {{-- @if ($product->category && $product->category->name == 'Whole beans') --}}
+                                                                @if ($product->category && $product->category->name == 'Whole beans')
                                                                     <tr>
                                                                         <td>{{ $product->id }}</td>
                                                                         <td>{{$product->name}}</td>
@@ -83,7 +83,7 @@
                                                                             </form>
                                                                         </td>
                                                                     </tr>
-                                                                    {{-- @endif --}}
+                                                                    @endif
                                                                 @empty
                                                                     <td colspan="6">No Products Available</td>
                                                                 @endforelse
@@ -154,7 +154,7 @@
                                                                         
                                                                         <td class="d-flex">
                                                                             <a href="{{route('admin.product.edit', ['id'=>$product->id])}}" class="btn btn-sm btn-success me-1" >Edit</a>
-                                                                            <form action="{{ route('admin.product.delete', ['id' => $product->id]) }}" method="POST">
+                                                                            <form action="{{ route('admin.product.destroy', ['id' => $product->id]) }}" method="POST">
                                                                                 @method('DELETE')
                                                                                 @csrf
                                                                                 <input type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this product?')" value="Delete">

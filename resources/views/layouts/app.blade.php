@@ -15,6 +15,7 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
+    <link href="https://fonts.cdnfonts.com/css/yellow-ginger" rel="stylesheet">  
     <script src="//unpkg.com/alpinejs" defer></script>
 
     <!-- Styles -->
@@ -37,7 +38,7 @@
                 class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center lg:items-center lg:justify-center mb-4 md:mb-0">
                 <img src="{{asset('images/Logostroke.png')}}" style="height: 50px"
                     alt="logo">
-                    <span>teambangan</span>
+                    <span class="font-yellow">Teambangan</span>
             </a>
             <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
 
