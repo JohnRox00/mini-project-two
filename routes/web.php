@@ -46,8 +46,13 @@ Route::prefix('/admin')->middleware(['auth', 'isAdmin'])->group(function() {
         Route::delete('product/{id}/delete', 'destroy')->name('admin.product.destroy');
         
     });
+
+    
 });
+Route::get('/admin/products/{id}', 'Admin\ProductController@show');
 
-Route::delete('admin/product/delete/{id}', [ProductController::class, 'delete'])->name('admin.product.delete');
 
-// Route::get('/admin/products/{id}', 'Admin\ProductController@show');
+Route::get('images/{id}', 'ProductController@show')->name('images.show');
+
+
+

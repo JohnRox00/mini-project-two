@@ -46,13 +46,14 @@
                                                                     <th>Category</th>
                                                                     <th>Quantity</th>
                                                                     <th>Price</th>
+                                                                    <th>Image</th>
                                                                     <th>Status</th>
                                                                     <th>Action</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 @forelse ($products as $product)
-                                                                {{-- @if ($product->category && $product->category->name == 'Whole beans') --}}
+                                                                @if ($product->category && $product->category->name == 'Whole beans')
                                                                     <tr>
                                                                         <td>{{ $product->id }}</td>
                                                                         <td>{{$product->name}}</td>
@@ -65,6 +66,9 @@
                                                                         </td>
                                                                         <td>{{$product->quantity}}</td>
                                                                         <td>{{$product->price}}</td>
+                                                                        <td><img src="{{ asset($product->image) }}" alt="{{ $product->name }}">
+
+                                                                        </td>
                                                                         <td @if ($product->quantity < 10) style="color: red; font-weight: bold;" @endif>
                                                                             @if ($product->quantity >= 10)
                                                                                 Normal
@@ -83,7 +87,7 @@
                                                                             </form>
                                                                         </td>
                                                                     </tr>
-                                                                    {{-- @endif --}}
+                                                                    @endif
                                                                 @empty
                                                                     <td colspan="6">No Products Available</td>
                                                                 @endforelse
@@ -154,7 +158,7 @@
                                                                         
                                                                         <td class="d-flex">
                                                                             <a href="{{route('admin.product.edit', ['id'=>$product->id])}}" class="btn btn-sm btn-success me-1" >Edit</a>
-                                                                            <form action="{{ route('admin.product.delete', ['id' => $product->id]) }}" method="POST">
+                                                                            <form action="{{ route('admin.product.destroy', ['id' => $product->id]) }}" method="POST">
                                                                                 @method('DELETE')
                                                                                 @csrf
                                                                                 <input type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this product?')" value="Delete">
@@ -189,6 +193,8 @@
         </div>
     </div>
 </div>
+
+
 @endsection
 
 

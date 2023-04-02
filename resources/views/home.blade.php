@@ -1,26 +1,50 @@
 @extends('layouts.app')
 
 @section('content')
+
+<table>
+    <tr>
+        @php
+            $counter = 0;
+        @endphp
+        @foreach($products as $product)
+            <td class="mx-3">
+                <div class="card p-6">
+                    @if ($product->image)
+                        <img src="{{ asset($product->image) }}" class="card-img-top" alt="{{ $product->name }}">
+                    @else
+                        <div class="no-image"></div>
+                    @endif
+                    <div class="card-body text-white text-center">
+                        <h5 class="card-title">{{ $product->name }}</h5>
+                        <p class="card-text"><strong>Category: {{ $product->category->name }}</strong></p>
+                        <p class="card-text"><strong>Price: {{ $product->price }}</strong></p>
+                    </div>
+                </div>
+            </td>
+            @php
+                $counter++;
+                if ($counter % 4 === 0) {
+                    echo '</tr><tr>';
+                }
+            @endphp
+        @endforeach
+    </tr>
+</table>
+
+
+
+
+
+
+
     <div class="bg-black/25 py-5">
         <section class="overflow-hidden header-bg py-52">
             <div class="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">
                 <div role="main" class="flex flex-col items-center justify-center">
                     <h1 class="text-4xl font-semibold leading-9 text-center text-white dark:text-white"> <img
                             class="object-contain h-24 center" src="{{ asset('images/LogoWhite.png') }}" alt=""> </h1>
-                            {{-- <h1>{{ $product->name }}</h1>
-
-<p>{{ $product->description }}</p>
-
-<p>Price: {{ $product->price }}</p>
-
-@if ($product->image)
-    <img src="{{ asset($product->image) }}" alt="{{ $product->name }}">
-@else
-    No image available
-@endif --}}
-
-
-                    
+                        
                             <p
                         class="text-base text-lg stroke-2 leading-normal text-center text-gray-600 dark:text-white mt-4 lg:w-1/2 md:w-10/12 w-11/12">
                         If you're looking for the finest of Coffee's, that is able to lull your heart into the sweetest
