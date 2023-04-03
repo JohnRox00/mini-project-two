@@ -46,7 +46,6 @@
                                                                     <th>Category</th>
                                                                     <th>Quantity</th>
                                                                     <th>Price</th>
-                                                                    <th>Image</th>
                                                                     <th>Status</th>
                                                                     <th>Action</th>
                                                                 </tr>
@@ -66,9 +65,6 @@
                                                                         </td>
                                                                         <td>{{$product->quantity}}</td>
                                                                         <td>{{$product->price}}</td>
-                                                                        <td><img src="{{ asset($product->image) }}" alt="{{ $product->name }}">
-
-                                                                        </td>
                                                                         <td @if ($product->quantity < 10) style="color: red; font-weight: bold;" @endif>
                                                                             @if ($product->quantity >= 10)
                                                                                 Normal
