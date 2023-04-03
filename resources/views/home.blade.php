@@ -118,12 +118,14 @@
                             @else
                                 <div class="no-image"></div>
                             @endif
-    
+
                             <div class="relative pt-3 bg-gray-900">
-                                <h5 class="text-lg text-center text-white group-hover:underline group-hover:underline-offset-4">
+                                <h5
+                                    class="text-lg text-center text-white group-hover:underline group-hover:underline-offset-4">
                                     {{ $product->name }}</h5>
                                 {{-- <p class="card-text"><strong>Category: {{ $product->category->name}}</strong></p> --}}
-                                <p class="text-lg text-center text-white group-hover:underline group-hover:underline-offset-4">
+                                <p
+                                    class="text-lg text-center text-white group-hover:underline group-hover:underline-offset-4">
                                     <strong>Price: {{ $product->price }}</strong>
                                 </p>
                             </div>
@@ -221,9 +223,53 @@
                 </div>
             </div>
         </div>
+        <div
+            class="backdrop-blur-md bg-gradient-to-r from-transparent via-gray-800 to-transparentpy-20 h-full ntialiased  h-full w-screen flex flex-row bg-black w-full text-slate-300 relative py-4 bg-black">
+            <div class="container mx-auto px-6 md:px-12 xl:px-32 ">
+                <div role="main" class="flex flex-col items-center justify-center mb-16">
+                    <h1 class="text-4xl font-semibold leading-9 text-center text-white dark:text-white"> <img
+                            class="object-contain h-24 center" src="{{ asset('images/LogoWhite.png') }}" alt="">
+                    </h1>
+                    <p
+                        class="text-base leading-normal text-center text-gray-600 dark:text-white mt-4 lg:w-1/2 md:w-10/12 w-11/12">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis delectus ipsum libero quia
+                        incidunt! Reiciendis pariatur possimus autem distinctio? Magnam!</p>
+                </div>
+                <div class="grid gap-12 items-center md:grid-cols-3">
+                    <div class="space-y-4 text-center">
+                        <img class="w-64 h-64 mx-auto object-cover rounded-xl "
+                            src="{{ asset('images/d9569bbed4393e2ceb1af7ba64fdf86a.jpg') }}" alt="man" loading="lazy"
+                            width="640" height="805">
+                        <div>
+                            <h4 class="text-2xl">Jerwyn</h4>
+                            <span class="block text-sm text-gray-500">Member</span>
+                        </div>
+                    </div>
+                    <div class="space-y-4 text-center">
+                        <img class="w-64 h-5/6 mx-auto object-cover rounded-xl md:w-48 md:h-64 lg:w-64 lg:h-80"
+                            src="{{ asset('images/d9569bbed4393e2ceb1af7ba64fdf86a.jpg') }}" alt="man" loading="lazy"
+                            width="1000" height="667">
+                        <div>
+                            <h4 class="text-2xl">Van</h4>
+                            <span class="block text-sm text-gray-500">Team Leader</span>
+                        </div>
+                    </div>
+                    <div class="space-y-4 text-center">
+                        <img class="w-64 h-64 mx-auto object-cover rounded-xl md:w-40 md:h-40 lg:w-64 lg:h-64"
+                            src="{{ asset('images/d9569bbed4393e2ceb1af7ba64fdf86a.jpg') }}" alt="man"
+                            loading="lazy" width="1000" height="667">
+                        <div>
+                            <h4 class="text-2xl">Raffy</h4>
+                            <span class="block text-sm text-gray-500">Chief Operations Officer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section class="bg-gray-900 opacity-80 dark:bg-gray-900 ">
             <div class="container mx-auto max-w-4xl px-6 py-10">
-                <h1 class="text-center text-4xl font-semibold text-gray-800 dark:text-white">Frequently asked questions</h1>
+                <h1 class="text-center text-4xl font-semibold text-gray-800 dark:text-white">Frequently asked questions
+                </h1>
 
                 <div class="mt-12 space-y-8">
                     <div class="rounded-lg border-2 border-gray-100 dark:border-gray-700">
@@ -231,9 +277,10 @@
                             <h1 class="font-semibold text-gray-700 dark:text-white">How i can pay for my Orders?</h1>
 
                             <span class="rounded-full bg-gray-200 text-gray-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6" />
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M18 12H6" />
                                 </svg>
                             </span>
                         </button>
@@ -250,8 +297,8 @@
                             <h1 class="font-semibold text-gray-700 dark:text-white">Are you open for franchising?</h1>
 
                             <span class="rounded-full bg-blue-500 text-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                                 </svg>
@@ -424,14 +471,14 @@
                             <form class="mt-6">
                                 <div class="flex-1">
                                     <label class="mb-2 block text-sm text-gray-600 dark:text-gray-200">Full Name</label>
-                                    <input type="text" placeholder="John Doe"
+                                    <input type="text" placeholder="belial"
                                         class="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" />
                                 </div>
 
                                 <div class="mt-6 flex-1">
                                     <label class="mb-2 block text-sm text-gray-600 dark:text-gray-200">Email
                                         address</label>
-                                    <input type="email" placeholder="johndoe@example.com"
+                                    <input type="email" placeholder="email@example.com"
                                         class="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" />
                                 </div>
 
