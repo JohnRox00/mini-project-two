@@ -65,15 +65,13 @@
                                                                         </td>
                                                                         <td>{{$product->quantity}}</td>
                                                                         <td>{{$product->price}}</td>
-                                                                        <td @if ($product->quantity < 10) style="color: red; font-weight: bold;" @endif>
-                                                                            @if ($product->quantity >= 10)
-                                                                                Normal
+                                                                        <td @if ($product->quantity < 10) style="color: red; font-weight: bold;" @else style="color: green; font-weight: bold;" @endif>
+                                                                            @if ($product->quantity >= 10) 
+                                                                                Normal Stock
                                                                             @else
                                                                                 Need to restock
                                                                             @endif
-                                                                        </td>
-                                                                    
-                                                                        
+                                                                        </td>  
                                                                         <td class="d-flex">
                                                                             <a href="{{route('admin.product.edit', ['id'=>$product->id])}}" class="btn btn-sm btn-success me-1" >Edit</a>
                                                                             <form action="{{route('admin.product.destroy', ['id'=>$product->id])}}" method="POST">

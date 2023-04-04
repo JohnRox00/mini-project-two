@@ -102,8 +102,8 @@
      </div>  --}}
         <div class="bg-black/75 backdrop-blur-md bg-gradient-to-r from-transparent via-gray-800 to-transparent opacity-80">
             <table class="mx-auto max-w-full mx-auto px-4 sm:px-6 lg:px-4 mb-12 mt-6 ">
-                <div role="main" class="opacity-75 flex flex-col items-center justify-center">
-                    <img class="object-contain h-64" src="{{ asset('images/Our Products.png') }}" alt="">
+                <div role="main" class="opacity-75 flex flex-col items-center justify-center ">
+                    <img class="object-contain h-34 " src="{{ asset('images/Our Products.png') }}" alt="">
                 </div>
                 <tr
                     class="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -111,7 +111,7 @@
                         $counter = 0;
                     @endphp
                     @foreach ($products as $product)
-                        <td class="">
+                        <td class=>
                             @if ($product->image)
                                 <img class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px] overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out"
                                     src="{{ asset($product->image) }}">
@@ -121,7 +121,7 @@
     
                             <div class="relative pt-3 bg-gray-900">
                                 <h5 class="text-lg text-center text-white group-hover:underline group-hover:underline-offset-4">
-                                    {{ $product->name }}</h5>
+                                    {{ $product->name }} {{ $product->category->name}}</h5>
                                 {{-- <p class="card-text"><strong>Category: {{ $product->category->name}}</strong></p> --}}
                                 <p class="text-lg text-center text-white group-hover:underline group-hover:underline-offset-4">
                                     <strong>Price: {{ $product->price }}</strong>
