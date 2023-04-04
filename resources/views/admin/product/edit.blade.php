@@ -44,8 +44,17 @@
                                         </select>
                                     </div>
                                     <div class="mb-3">
-                                        <label>Product Name</label>
-                                        <input type="text" name="name" value="{{$product->name}}" class="form-control">
+                                        <label>Coffee Type</label>
+                                            <select name="name" class="form-control">
+                                                <option value="BARAKO">BARAKO</option>
+                                                <option value="EXCELSIA">EXCELSIA</option>
+                                                <option value="ROBUSTA">ROBUSTA</option>
+                                                <option value="ARABICA">ARABICA</option>
+                                                <option value="HAZELNUT">HAZELNUT</option>
+                                                <option value="VANILLA">VANILLA</option>
+                                                <option value="CARAMEL">CARAMEL</option>
+                                                <option value="DARKCHOCO">DARKCHOCO</option>
+                                                </select>
                                     </div>
                                     <div class="mb-3">
                                         <label>Small Description</label>
