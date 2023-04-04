@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
     <div class="bg-black/25 py-5">
         <section class="overflow-hidden header-bg py-52">
             <div class="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">

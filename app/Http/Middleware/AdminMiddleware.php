@@ -14,11 +14,15 @@ class AdminMiddleware
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    public function handle(Request $request, Closure $next): Response
-    {
-        if(!Auth::user()->user_type == 1){
-            return redirect('/home')->with('status', 'Access Dennied. You are not the Admin');
-        }
+    public function handle(Request $request, Closure $next)
+{
+    if ($request->user() && $request->user()->user_type === 1) {
         return $next($request);
+    } elseif ($request->user() && $request->user()->user_type === 0) {
+        return redirect('/home')->with('warning', 'You do not have admin access.');
     }
+
+    return redirect('/home');
+}
+
 }
