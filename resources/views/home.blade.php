@@ -1,9 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-
-    <div class="bg-black/25 py-5">
-        <section class="overflow-hidden header-bg py-52">
+    <div class="bg-black/25">
+        <section class="overflow-hidden header-bg py-96">
             <div class="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">
                 <div role="main" class="flex flex-col items-center justify-center">
                     <h1 class="text-4xl font-semibold leading-9 text-center text-white dark:text-white"> <img
@@ -18,93 +17,10 @@
                 </div>
             </div>
         </section>
-        {{-- <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-4 mb-12 mt-6">
-            <div role="main" class="flex flex-col items-center justify-center">
-                <img class="object-contain h-64" src="{{ asset('images/Our Products.png') }}" alt="">
-            </div>
-            <article>
-                <div class="mt-8 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-x-36 gap-y-8">
-                    @php
-                        $counter = 0;
-                    @endphp
-                    @foreach ($products as $product)
-                        @if ($product->image)
-                            <article
-                                class="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out"
-                                style="background-image: url('{{ asset('$product->image') }}');height:30rem;background-size:cover;background-position:center">
-                            @else
-                                <div class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out">
-                                </div>
-
-                                <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
-                                    <h3 class="text-center">
-                                        <a class="text-white text-2xl font-bold text-center" href="#">
-                                            <span class="absolute inset-0"></span>
-                                            Nescafe stick
-                                        </a>
-                                    </h3>
-                                </div>
-                            </article>
-                        @endif
-                        <article
-                            class="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out"
-                            style="background-image: url('{{ asset('images/Cup-Of-Creamy-Coffee-500x375.png') }}');height:30rem;background-size:cover;background-position:center">
-                            <div
-                                class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out">
-                            </div>
-                            <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
-                                <h3 class="text-center">
-                                    <a class="text-white text-2xl font-bold text-center" href="#">
-                                        <span class="absolute inset-0"></span>
-                                        Nescafe stick
-                                    </a>
-                                </h3>
-                            </div>
-                        </article>
-                        <article
-                            class="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out"
-                            style="background-image: url('{{ asset('images/Cup-Of-Creamy-Coffee-500x375.png') }}');height:30rem;background-size:cover;background-position:center">
-                            <div
-                                class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out">
-                            </div>
-                            <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
-                                <h3 class="text-center">
-                                    <a class="text-white text-2xl font-bold text-center" href="#">
-                                        <span class="absolute inset-0"></span>
-                                        Nescafe stick
-                                    </a>
-                                </h3>
-                            </div>
-                        </article>
-                        <article
-                            class="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out"
-                            style="background-image: url('{{ asset('images/Cup-Of-Creamy-Coffee-500x375.png') }}');height:30rem;background-size:cover;background-position:center">
-                            <div
-                                class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out">
-                            </div>
-                            <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
-                                <h3 class="text-center">
-                                    <a class="text-white text-2xl font-bold text-center" href="#">
-                                        <span class="absolute inset-0"></span>
-                                        Nescafe stick
-                                    </a>
-                                </h3>
-                            </div>
-                        </article>
-                        @php
-                            $counter++;
-                            if ($counter % 4 === 0) {
-                                echo '</article><article>';
-                            }
-                        @endphp
-                    @endforeach
-                </div>
-            </article>
-     </div>  --}}
         <div class="bg-black/75 backdrop-blur-md bg-gradient-to-r from-transparent via-gray-800 to-transparent opacity-80">
             <table class="mx-auto max-w-full mx-auto px-4 sm:px-6 lg:px-4 mb-12 mt-6 ">
-                <div role="main" class="opacity-75 flex flex-col items-center justify-center ">
-                    <img class="object-contain h-34 " src="{{ asset('images/Our Products.png') }}" alt="">
+                <div role="main" class="flex flex-col items-center justify-center ">
+                    <img class="object-contain h-44" src="{{ asset('images/Our Products.png') }}" alt="">
                 </div>
                 <tr
                     class="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -112,18 +28,18 @@
                         $counter = 0;
                     @endphp
                     @foreach ($products as $product)
-                        <td class=>
+                        <td class="w-full max-w-md  mx-auto bg-gray-900 rounded-3xl shadow-xl overflow-hidden">
                             @if ($product->image)
-                                <img class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px] overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out"
+                                <img class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
                                     src="{{ asset($product->image) }}">
                             @else
                                 <div class="no-image"></div>
                             @endif
 
                             <div class="relative pt-3 bg-gray-900">
-                                <h5 class="text-lg text-center text-white group-hover:underline group-hover:underline-offset-4">
-                                    {{ $product->name }} {{ $product->category->name}}</h5>
-                                {{-- <p class="card-text"><strong>Category: {{ $product->category->name}}</strong></p> --}}
+                                <h5
+                                    class="text-lg text-center text-white group-hover:underline group-hover:underline-offset-4">
+                                    {{ $product->name }} {{ $product->category?->name }}</h5>
                                 <p
                                     class="text-lg text-center text-white group-hover:underline group-hover:underline-offset-4">
                                     <strong>Price: {{ $product->price }}</strong>
@@ -240,28 +156,38 @@
                         <img class="w-64 h-64 mx-auto object-cover rounded-xl "
                             src="{{ asset('images/d9569bbed4393e2ceb1af7ba64fdf86a.jpg') }}" alt="man" loading="lazy"
                             width="640" height="805">
-                        <div>
-                            <h4 class="text-2xl">Jerwyn</h4>
-                            <span class="block text-sm text-gray-500">Member</span>
+                            <div
+                            class="flex-col group flex items-center bg-transparent p-2 px-6 text-xl font-thin tracking-widest text-white">
+                            <h4
+                                class="text-2xl relative pr-4 pb-1 text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-blue-500 after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
+                                Jerwyn</h4>
+                            <span class="block text-sm text-gray-300 font-medium hover:text-white">Member</span>
                         </div>
                     </div>
                     <div class="space-y-4 text-center">
                         <img class="w-64 h-5/6 mx-auto object-cover rounded-xl md:w-48 md:h-64 lg:w-64 lg:h-80"
                             src="{{ asset('images/d9569bbed4393e2ceb1af7ba64fdf86a.jpg') }}" alt="man" loading="lazy"
                             width="1000" height="667">
-                        <div>
-                            <h4 class="text-2xl">Van</h4>
-                            <span class="block text-sm text-gray-500">Team Leader</span>
+                            <div
+                            class="flex-col group flex items-center bg-transparent p-2 px-6 text-xl font-thin tracking-widest text-white">
+                            <h4
+                                class="text-2xl relative pr-4 pb-1 text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-blue-500 after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
+                                Van</h4>
+                            <span class="block text-sm text-gray-300 font-medium hover:text-white">Leader</span>
                         </div>
                     </div>
                     <div class="space-y-4 text-center">
                         <img class="w-64 h-64 mx-auto object-cover rounded-xl md:w-40 md:h-40 lg:w-64 lg:h-64"
                             src="{{ asset('images/d9569bbed4393e2ceb1af7ba64fdf86a.jpg') }}" alt="man"
                             loading="lazy" width="1000" height="667">
-                        <div>
-                            <h4 class="text-2xl">Raffy</h4>
-                            <span class="block text-sm text-gray-500">Chief Operations Officer</span>
-                        </div>
+                     
+                            <div
+                                class="flex-col group flex items-center bg-transparent p-2 px-6 text-xl font-thin tracking-widest text-white">
+                                <h4
+                                    class="text-2xl relative pr-4 pb-1 text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-blue-500 after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
+                                    Raffy</h4>
+                                <span class="block text-sm text-gray-300 font-medium hover:text-white">Leader</span>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -561,8 +487,7 @@
 
                         <div class="mt-5 flex flex-col items-start space-y-2">
                             <a href="#"
-                                class="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">+880
-                                768 473 4978</a>
+                                class="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">09123456789</a>
                             <a href="#"
                                 class="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">email@example.com</a>
                         </div>
@@ -577,7 +502,8 @@
                             class="object-contain h-24 center" src="{{ asset('images/LogoWhite.png') }}"
                             alt=""></a>
 
-                    <p class="mt-4 text-sm text-gray-500 dark:text-gray-300 sm:mt-0">© Copyright 2021. All Rights Reserved.
+                    <p class="mt-4 text-sm text-gray-500 dark:text-gray-300 sm:mt-0">© Teambangan 2023. All Rights
+                        Reserved.
                     </p>
                 </div>
             </div>

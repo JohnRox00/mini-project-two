@@ -105,7 +105,7 @@
             </div>
         </header>
 
-        <main class="py-4 bg-gray-700"
+        <main class="bg-gray-700"
             style="background-image: url('{{ asset('images/bg-hidden.png') }}');background-size:cover;background-position:center">
             @yield('content')
         </main>
