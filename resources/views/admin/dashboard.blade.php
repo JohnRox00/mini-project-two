@@ -5,9 +5,10 @@
       <div class="alert alert-success">{{ session('message') }}</div>
    @endif
 
-   <div class="container-fluid" px-4>
-        <h1 class="mt-4">Dashboard</h1>
-        <p class="mb-4">Dashboard</p>
+   <div class="container-fluid text-center" px-4>
+        <h1 class="mt-4">Product Management/Inventory</h1>
+        <img class="img-fluid" src="{{asset('images/Logo1.png')}}" alt="" style="height: 500px;">
+
         <div class="row">
         </div>
         {{-- <div class="main-logo justify-center">
